@@ -288,39 +288,41 @@
       </section>
     </main>
     <!--Подвал-->
-    <footer class="footer">
+    <footer class="page-footer">
       <div class="container">
         <div class="footer-info">
-          <div class="footer-iner">
-            <a href="./index.html" class="footer-logo"
-              ><span class="footer-logo-studio">Web</span>Studio</a
+          <div>
+            <a href="./index.html" class="footer__logo"
+              ><span class="footer-logo__lable">Web</span>Studio</a
             >
             <address>
-              <ul class="footer-contacts">
-                <li class="footer-contacts-list">
-                  <a class="home" href="https://bit.ly/3pXMvUd"
+              <ul class="footer__contacts">
+                <li class="footer-contacts__item">
+                  <a class="footer-contacts__link" href="https://bit.ly/3pXMvUd"
                     >г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
-                <li class="contact-link">
-                  <a class="footer-contact-mail" href="mailto:info@devstudio.co"
+                <li class="footer-contacts__item">
+                  <a
+                    class="footer-contacts__mail"
+                    href="mailto:info@devstudio.co"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="contact-link">
-                  <a class="footer-contact-tel" href="tel:+380961111111"
+                <li class="footer-contacts__item">
+                  <a class="footer-contacts__tel" href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
             </address>
           </div>
-          <div class="footer-in">
-            <h3 class="join">Присоединяйтесь</h3>
-            <ul class="links">
-              <li class="links-networks">
-                <a href="#" class="footer-networks">
-                  <svg class="social-footer-networks">
+          <div class="footer-social">
+            <h3 class="social__description">Присоединяйтесь</h3>
+            <ul class="networks">
+              <li class="networks__item">
+                <a href="#" class="networks__link">
+                  <svg class="networks__icon">
                     <use
                       href="./images/icons.svg#icon-instagram"
                       width="20px"
@@ -329,9 +331,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="links-networks">
-                <a href="#" class="footer-networks">
-                  <svg class="social-footer-networks">
+              <li class="networks__item">
+                <a href="#" class="networks__link">
+                  <svg class="networks__icon">
                     <use
                       href="./images/icons.svg#icon-twitter"
                       width="20px"
@@ -340,9 +342,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="links-networks">
-                <a href="#" class="footer-networks">
-                  <svg class="social-footer-networks">
+              <li class="networks__item">
+                <a href="#" class="networks__link">
+                  <svg class="networks__icon">
                     <use
                       href="./images/icons.svg#icon-facebook"
                       width="20px"
@@ -351,9 +353,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="links-networks">
-                <a href="#" class="footer-networks">
-                  <svg class="social-footer-networks">
+              <li class="networks__item">
+                <a href="#" class="networks__link">
+                  <svg class="networks__icon">
                     <use
                       href="./images/icons.svg#icon-linkedin"
                       width="20px"
@@ -365,20 +367,20 @@
             </ul>
           </div>
           <div class="footer-sending">
-            <p class="writer">Подпишитесь на рассылку</p>
-            <form class="form-sending" name="subscription" autocomplete="on">
-              <label class="visually" for="subscription-email"></label>
+            <p class="sending__text">Подпишитесь на рассылку</p>
+            <form class="form__sending" name="subscription" autocomplete="on">
+              <label class="lable__visually" for="subscription-email"></label>
               <input
-                class="form-mail"
+                class="input__mail"
                 type="email"
                 name="subscription-email"
                 id="subscription-email"
                 placeholder="E-mail"
                 required
               />
-              <button class="button-form" type="button-sending">
+              <button class="button__form" type="button-sending">
                 Подписаться
-                <svg class="button-send">
+                <svg class="button__icon">
                   <use
                     href="./images/icons.svg#icon-icon-send"
                     width="24px"

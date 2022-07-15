@@ -1158,31 +1158,57 @@ textarea {
 
  /* Подвал */
 
-.footer { 
+.page-footer { 
        
     background: #2F303A;    
     padding-top: 60px;
     padding-bottom: 60px;
-    
-   
+
 }
 
+.footer-info {
+    display: flex;
+    justify-content: start;
+
+}
+
+.footer__logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
 
 
+}
 
+.footer-logo__lable {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
 
+}
 
-.footer-contacts {
+.footer__contacts {
     padding-left: 0;
     margin-top: 20px;
     margin-bottom: 0%;
-    
+
+}
+
+.footer-contacts__item {
+    margin-bottom: 9px;
 }
 
 
-
-
-.home {
+.footer-contacts__link {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1195,32 +1221,9 @@ textarea {
 
 }
 
-.footer-logo {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;     
-    text-decoration: none;    
 
 
- }
-
-.footer-logo-studio {
-    font-family: 'Raleway', sans-serif;     
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #2196F3;
-    text-decoration: none;
-
-}
-
-
-.footer-contact-mail {
+.footer-contacts__mail {
     font-family: 'Roboto', sans-serif; 
     font-style: normal;
     font-weight: 400;
@@ -1230,11 +1233,12 @@ textarea {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     
-
+   
 }
 
 
-.footer-contact-tel {
+
+.footer-contacts__tel {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1247,45 +1251,28 @@ textarea {
 
 }
 
-
-.footer-contacts-list {
-    margin-bottom: 9px;
-}
-
-
-.footer-contact-mail {
-    margin-bottom: 9px;
-}
-
-
-.footer-info {
-    display: flex;
-    justify-content: start;
-    
-}
-
-.footer-in {
+.footer-social {
     margin-left: 70px;
 }
 
-.links {
+.networks {
     display: flex;
     padding: 0;
     
 }
 
-.links-networks {
+.networks__item {
     display: block;
     margin-right: 10px;
     
 }
 
-.links-networks:last-child {
+.networks__item:last-child {
     margin-right: 0;
 }
 
 
-.social-footer-networks {
+.networks__icon {
     width: 20px;
     height: 20px;
     
@@ -1298,7 +1285,7 @@ textarea {
 
 
 
-.footer-networks  {
+.networks__link  {
     display: flex;  
     align-items: center;
     justify-content: center;
@@ -1314,13 +1301,13 @@ textarea {
 
 
 
-.footer-networks:hover,
-.footer-networks:focus {    
+.networks__link:hover,
+.networks__link:focus {    
     background-color: #2196F3;
 }
 
 
-.join {
+.social__description {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1335,8 +1322,12 @@ textarea {
 }
 
 
+.footer-sending {
+    margin-left: auto;
 
-.writer {
+}
+
+.sending__text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1356,7 +1347,7 @@ textarea {
 
 
 
-.form-sending {
+.form__sending {
     display: flex;
     align-items: center;
     
@@ -1366,7 +1357,7 @@ textarea {
 }
 
 
-.form-mail {
+.input__mail {
     display: flex;
     align-items: center;    
     min-width: 358px;
@@ -1387,14 +1378,14 @@ textarea {
 }
 
 
-.form-mail:focus {
+.form__mail:focus {
     border: 1px solid rgba(255, 255, 255, 0.3);
     outline: none;
 
 }    
 
 
-.button-form {
+.button__form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1420,8 +1411,8 @@ textarea {
 
 
 
-.button-form:hover,
-.button-form:focus {
+.button__form:hover,
+.button__form:focus {
     background-color: #188ce8;
     cursor: pointer;
  
@@ -1429,7 +1420,7 @@ textarea {
 }
 
 
-.button-send {
+.button__icon {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -1440,10 +1431,7 @@ textarea {
 }
 
 
-.footer-sending {
-    margin-left: auto;
-    
-}
+
 
 
 
