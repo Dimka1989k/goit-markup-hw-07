@@ -75,7 +75,7 @@ textarea {
         
 }
 
-/* Шапка сайта */
+/* Header Site */
 
 .header-inner {
     display: inline-flex;        
@@ -243,10 +243,62 @@ textarea {
        
 }
 
+/* Hero */
+
+.hero {
+    background-color: #2F303A;
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img111.jpg);
+
+}
+
+.hero__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 
 
+}
 
-/* Модальное окно */
+
+.button__open {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+
+/* Modal Window */
 
 .backdrop {
     position: fixed;
@@ -287,7 +339,7 @@ textarea {
 
 
 
-.button-close {
+.button__close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -309,7 +361,7 @@ textarea {
 
 }
 
-.close-icon {    
+.close__icon {    
     width: 18px;
     fill: currentColor;
     
@@ -319,8 +371,8 @@ textarea {
 
 
 
-.button-close:hover,
-.button-close:hover {
+.button__close:hover,
+.button__close:hover {
     box-shadow: none;    
     color: #2196F3;
 
@@ -329,7 +381,7 @@ textarea {
 
 
 
-.form-modal {
+.form__modal {
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -342,7 +394,7 @@ textarea {
     
 }
 
-.group-form {
+.form {
     width: 100%;
     position: relative;
     
@@ -351,9 +403,9 @@ textarea {
 }
 
 
-.group-form:focus-within > .modal-icon,
-.group-form:hover > .modal-icon, 
-.group-form:focus > .modal-icon {
+.form:focus-within > .modal__icon,
+.form:hover > .modal__icon, 
+.form:focus > .modal__icon {
     fill: #2196F3;
 }
 
@@ -363,7 +415,7 @@ textarea {
 
   
 
-.form-title {      
+.form__title {      
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -379,7 +431,7 @@ textarea {
 
 
 
-.form-lable {
+.form__lable {
     display: block;
     width: 25px;
     height: 14px;
@@ -397,7 +449,7 @@ textarea {
 
 
  
-.form-input {    
+.form__input {    
     width: 100%;
     height: 40px;    
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -411,9 +463,9 @@ textarea {
     
 }
 
-.form-input:focus-within,
-.form-input:hover,
-.form-input:focus {
+.form__input:focus-within,
+.form__input:hover,
+.form__input:focus {
     border: 1px solid #2196F3;
     color: #2196F3;    
     fill: #2196F3;
@@ -423,7 +475,7 @@ textarea {
 
 
 
-.modal-icon {
+.modal__icon {
     position: absolute;
     top: 50%;
     left: 0;
@@ -438,7 +490,7 @@ textarea {
 
 
 
-.form-textarea {
+.form__textarea {
     width: 100%;
     height: 120px;       
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -450,8 +502,8 @@ textarea {
     
 }
 
-.form-textarea:hover,
-.form-textarea:focus {
+.form__textarea:hover,
+.form__textarea:focus {
     border: 1px solid #2196F3;
 
 
@@ -459,7 +511,7 @@ textarea {
 
 
 
-.group-form textarea::placeholder {
+.form textarea::placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -472,7 +524,7 @@ textarea {
 
 
 
-.button-modal {  
+.button__modal {  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -501,15 +553,15 @@ textarea {
 }
 
 
-.button-modal:hover,
-.button-modal:focus {
+.button__modal:hover,
+.button__modal:focus {
     background-color: #188ce8;
     cursor: pointer;
 
 }
 
 
-.form-textarea::placeholder {
+.form__textarea::placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -521,7 +573,7 @@ textarea {
 
 
 
-.label-checkbox {  
+.label__checkbox {  
     position: relative;  
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -538,7 +590,7 @@ textarea {
 
 }
 
-.visually-hidden {
+.visually__hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -553,7 +605,7 @@ textarea {
 }
 
 
-.icon-check {
+.icon__check {
     position: absolute;
     left: 0;
     top: 50%;
@@ -567,13 +619,13 @@ textarea {
 
 
 
-.checkbox:checked ~.icon-check {
+.checkbox:checked ~.icon__check {
     opacity: 0;
 }
 
 
 
-.icon-active {    
+.icon__active {    
     position: absolute;
     left: 0;
     top: 50%;
@@ -586,7 +638,7 @@ textarea {
 }
 
 
-.checkbox:checked~.icon-active {
+.checkbox:checked~.icon__active {
     opacity: 1;
 }
 
@@ -609,85 +661,44 @@ textarea {
 }
 
 
-.input-icon {
+.input__icon {
     width: 18px;
     height: 18px;  
 }
 
 
+/* Peculiarities */
 
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0%;
+    gap: 30px;
 
-/* Шапка */
-.hero { 
-    background-color: #2F303A;      
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: cover;
-    background-position: center;    
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img111.jpg);
- 
 }
 
-.solution {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;     
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;    
-    color: #FFFFFF;
-    max-width: 696px;
-    margin: 0 auto;    
-    margin-bottom: 30px;
-
-   
-}
-
-
-.button-open {
-    font-family: 'Roboto', sans-serif;
-    padding: 10px 32px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;      
+.benefits__content {
     display: flex;
     align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;         
-    color: #FFFFFF;
-    background-color: #2196F3;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration:none;
-    margin: 0 auto; 
-}
-
-
-.button__menu {
-    display: flex;
     justify-content: center;
-    margin: 0%;
-    gap: 8px;
-    margin-bottom: 50px;
-    padding-left: 0%;     
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
 
 }
 
+.benefits__icon {
+    width: 70px;
+    height: 70px;
+}
 
 
-
-
-/* Особенности */
-
-.title {
+.benefits__title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -700,7 +711,7 @@ textarea {
     margin-bottom: 10px;
 }
 
-.specific-text {
+.benefits__text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -713,39 +724,8 @@ textarea {
     
 }
 
-.title-text {
-    display: flex; 
-    justify-content: space-between; 
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0%;    
-    gap:30px;
-    
-}
 
-
-.benefits {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    
-    
-
-}
-
-.icon-specific {
-    width: 70px;
-    height: 70px;
-}
-
-
-
-/* Чем мы занимаемся */
+/* Occupation */
 
 .occupation {
     padding-top: 0;
@@ -754,7 +734,7 @@ textarea {
     
 }
 
-.work-position {
+.occupation__content {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -777,7 +757,7 @@ textarea {
 }
 
 
-.work-type {
+.work__type {
     position: relative;
     display: block;
     justify-content: space-between;
@@ -786,7 +766,7 @@ textarea {
 }
 
 
-.details-text {
+.work__details {
     position: absolute;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -808,14 +788,24 @@ textarea {
 }
 
 
-/* Команда */
+/* Team */
 
 .team {
     background-color: #F5F4FA;
     height: 708px;
 }
 
-.team-list {
+
+.employees {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+
+}
+
+.team__list {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -827,17 +817,19 @@ textarea {
 
 }
 
-.all-team {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0;
-    margin-top: 50px;
-    margin-bottom: 0;
-    
+.employee__card {
+    width: 270px;
+    height: 428px;
+    left: 215px;
+    top: 1635px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
 }
 
 
-.name {
+.employee__name {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -850,7 +842,7 @@ textarea {
   
 }
 
-.job-title { 
+.job___title { 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -865,7 +857,7 @@ textarea {
 
 
 
-.link-contact {
+.job___contact {
     display: flex;
     list-style: none;
     padding-left: 32px;
@@ -875,7 +867,7 @@ textarea {
 
 }
 
-.social-links {
+.social__network {
     width: 20px;
     height: 20px;
     color: #FFFFFF;
@@ -884,7 +876,7 @@ textarea {
 }
 
 
-.job-network {
+.contact__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -898,14 +890,14 @@ textarea {
 }
 
 
-.job-network:hover,
-.job-network:focus   {
+.contact__link:hover,
+.contact__link:focus   {
     background-color: #2196F3;  
     fill: currentColor;  
     
 }
 
-.clients {
+.caption__clients {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -918,29 +910,20 @@ textarea {
     margin-bottom: 50px;
 }
 
-.comand-card {    
-    width: 270px;
-    height: 428px;
-    left: 215px;
-    top: 1635px;
-    background: #FFFFFF;       
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    text-align: center;
-}
 
 
-.customer-icons:focus, 
-.icon-list-client:focus,
-.customer-icons:hover
-.icon-list-client:hover {    
+
+.clients:focus, 
+.clients__icon:focus,
+.clients:hover
+.clients__icon:hover {    
     border-color: #2196F3;
     color: #2196F3; 
     fill: currentColor;
     
 }
 
-.customer-icons {
+.clients {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -950,7 +933,7 @@ textarea {
 
 
 }
-.icon-customers {
+.clients__image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -962,7 +945,7 @@ textarea {
 
 }
  
-.icon-list-client {
+.clients__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -979,7 +962,7 @@ textarea {
 }
 
 
-.clients-icon {
+.clients__item {
     margin-right: 30px;
     
     
@@ -987,141 +970,12 @@ textarea {
 
 
 
-.clients-icon:last-child {
+.clients__item:last-child {
     margin-right: 0;
 }
 
-/* Все */
 
-
-
-
-.card__text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;           
-    letter-spacing: 0.06em;    
-    color: #212121;
-    margin: 0;
-   
-    
-  
-    
-         
-
-}
-
-
-
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 0%;  
-    gap: 30px;
-    margin: 0;
-    
-   
-
-}
-
-
-
-.card__title {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.9;       
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin: 0;    
-    
-    
-        
-}
-
-.portfolio__card {
-    width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 1130px;
-    border: 1px solid #EEEEEE;
-    cursor: pointer;
-    
- 
-    
-}
-
-
-
-.overlay {
-    position: relative;
-    overflow: hidden;
-   
-    
-   
-
-}
-
-.overlay__icon {    
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 294px;   
-    background-color: rgba(33, 150, 243, 0.9); 
-    transform: translatey(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    
-}
-    
-.portfolio__card:hover .overlay__icon {
-    transform: translatey(-100%);
-    
-    
-    
-    
-    
-}
-
-
-
-
-.overlay__text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;    
-    letter-spacing: 0.03em;    
-    color: #FFFFFF;
-    padding: 63px 24px;
-    text-align: left;
-    
-    
-        
-}
-    
-
-.portfolio__card:hover,
-.portfolio__card:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    
-}
-
-
-
-.card__description {
-    padding: 20px 24px;
-    
-}    
-
-/* Кнопки */
+/* Buttons */
 
 
 .button {
@@ -1149,14 +1003,132 @@ textarea {
     background-color: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     outline: none;
-   
+
+}
+
+.button__menu {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    gap: 8px;
+    margin-bottom: 50px;
+    padding-left: 0%;
+
+}
+
+/* Portfolio */
+
+
+.card__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;           
+    letter-spacing: 0.06em;    
+    color: #212121;
+    margin: 0;
+      
+
+}
+
+
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0%;  
+    gap: 30px;
+    margin: 0;
+
+
+}
+
+
+.card__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;       
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0;    
+
+        
+}
+
+.portfolio__card {
+    width: 370px;
+    height: 404px;
+    left: 215px;
+    top: 1130px;
+    border: 1px solid #EEEEEE;
+    cursor: pointer;
+
     
 }
 
 
 
+.overlay {
+    position: relative;
+    overflow: hidden;
+  
 
- /* Подвал */
+}
+
+.overlay__icon {    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 294px;   
+    background-color: rgba(33, 150, 243, 0.9); 
+    transform: translatey(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+    
+}
+    
+.portfolio__card:hover .overlay__icon {
+    transform: translatey(-100%);
+    
+    
+}
+
+
+.overlay__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;    
+    letter-spacing: 0.03em;    
+    color: #FFFFFF;
+    padding: 63px 24px;
+    text-align: left;
+    
+        
+}
+    
+
+.portfolio__card:hover,
+.portfolio__card:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
+}
+
+
+.card__description {
+    padding: 20px 24px;
+    
+}    
+
+
+ /* Footer */
 
 .page-footer { 
        
