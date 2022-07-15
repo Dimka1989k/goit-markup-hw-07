@@ -671,7 +671,7 @@ textarea {
 }
 
 
-.button-menu {
+.button__menu {
     display: flex;
     justify-content: center;
     margin: 0%;
@@ -996,7 +996,7 @@ textarea {
 
 
 
-.list {
+.card__text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1015,7 +1015,7 @@ textarea {
 
 
 
-.list-team {
+.portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1029,7 +1029,7 @@ textarea {
 
 
 
-.text {
+.card__title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1043,7 +1043,7 @@ textarea {
         
 }
 
-.portfolio-card {
+.portfolio__card {
     width: 370px;
     height: 404px;
     left: 215px;
@@ -1066,7 +1066,7 @@ textarea {
 
 }
 
-.overlay-icon {    
+.overlay__icon {    
     position: absolute;
     display: flex;
     justify-content: center;
@@ -1080,7 +1080,7 @@ textarea {
     
 }
     
-.portfolio-card:hover .overlay-icon {
+.portfolio__card:hover .overlay__icon {
     transform: translatey(-100%);
     
     
@@ -1092,7 +1092,7 @@ textarea {
 
 
 
-.overlay-text {
+.overlay__text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1108,15 +1108,15 @@ textarea {
 }
     
 
-.portfolio-card:hover,
-.portfolio-card:focus {
+.portfolio__card:hover,
+.portfolio__card:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     
 }
 
 
 
-.portfolio-card-list {
+.card__description {
     padding: 20px 24px;
     
 }    
