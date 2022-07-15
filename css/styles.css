@@ -64,39 +64,26 @@ textarea {
 
 
 
-
-
-
-/* layaouts */
-
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
-    
-          
-       
-}
-
-.page {
+.page-header {
     border-bottom: 1px solid #ECECEC;
 
 }
 
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+        
+}
 
-
-
-
+/* Шапка сайта */
 
 .header-inner {
     display: inline-flex;        
     height: 80px;
     align-items: center;
-    
-    
+ 
 }
 
-
-/* Шапка сайта */
 
 .logo {
     font-family: 'Raleway', sans-serif;    
@@ -107,22 +94,11 @@ textarea {
     color: #000000;
     text-decoration: none;
     margin-right: 93px;
-    
-    
-    
+     
 }
 
 
-.header-list {
-    padding-left: 0;
-    margin: 0;
-    
-}
-
-
-
-
-.logo-studio {  
+.logo__lable {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -130,13 +106,35 @@ textarea {
     letter-spacing: 0.03em;
     color: #2196F3;
     text-decoration: none;
-    
-    
-    
 
 }
 
-.menu-link {
+
+.navigation .nav__link {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.nav {
+    padding-left: 0;
+    margin: 0;
+    
+}
+
+
+.nav__item {
+    display: inline-flex;
+    margin-right: 50px;
+
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+
+}
+
+.nav__link {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -146,26 +144,16 @@ textarea {
     text-decoration: none;
     
     
-    
-    
 }
 
-.menu-link:hover,
-.menu-link:focus {
+.nav__link:hover,
+.nav__link:focus {
     color: #2196F3;
-    
-
-
+  
 }
 
-.header-nav .menu-link {
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
-
-
+.current {
+    color: #2196F3;
 }
 
 .current::after {
@@ -181,28 +169,33 @@ textarea {
   
 }
 
-.current {
-    color: #2196F3;
+.contacts {
+    display: inline-flex;
+    text-align: center;
+    padding-left: 0;
+    margin-left: 273px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
 }
 
-
-
-
-
-.menu-item {
+.contacts__item {
     display: inline-flex;
+    text-align: center;
+    justify-content: center;
     margin-right: 50px;
 
+
 }
 
-.menu-item:last-child {
+
+.contacts__item:last-child {
     margin-right: 0;
 
 }
 
 
-
-.contact-type {
+.contacts__link {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -217,45 +210,14 @@ textarea {
 }
 
 
-
-.contact-type:hover,
-.contact-type:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color: #2196F3;
     fill: currentColor;
     
 }
 
-
-
-
-.header-contacts {
-    display: inline-flex;    
-    text-align: center;
-    padding-left: 0;
-    margin-left: 273px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-
-}
-
-
-.header-contact-link {
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
-    margin-right: 50px;
-    
-    
-}
-
-
-.header-contact-link:last-child {    
-    margin-right: 0;
-
-}  
-
-
-.smartphone {
+.contacts__phone {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,11 +230,7 @@ textarea {
     
 }
 
-
-
-
-
-.mail {
+.contacts__mail {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,8 +240,7 @@ textarea {
     padding: 0;
     margin-right: 10px;
     fill: currentColor;
-    
-    
+       
 }
 
 
