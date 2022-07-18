@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Header Site-->
@@ -42,10 +43,13 @@
             </ul>
           </nav>
           <div>
-            <ul class="contacts">
-              <li class="contacts__item">
-                <a class="contacts__link" href="mailto:info@devstudio.co">
-                  <svg class="contacts__mail">
+            <ul class="header-contacts">
+              <li class="header-contacts__item">
+                <a
+                  class="header-contacts__link"
+                  href="mailto:info@devstudio.co"
+                >
+                  <svg class="header-contacts__mail">
                     <use
                       href="./images/icons.svg#icon-mail"
                       width="16px"
@@ -54,9 +58,9 @@
                   >info@devstudio.com
                 </a>
               </li>
-              <li class="contacts__item">
-                <a class="contacts__link" href="tel:+380961111111">
-                  <svg class="contacts__phone">
+              <li class="header-contacts__item">
+                <a class="header-contacts__link" href="tel:+380961111111">
+                  <svg class="header-contacts__phone">
                     <use
                       href="./images/icons.svg#icon-smartphone"
                       width="10px"
@@ -593,12 +597,12 @@
               </ul>
             </address>
           </div>
-          <div class="footer-social">
+          <div class="footer-social__networks">
             <h3 class="social__description">Присоединяйтесь</h3>
-            <ul class="networks">
-              <li class="networks__item">
-                <a href="#" class="networks__link">
-                  <svg class="networks__icon">
+            <ul class="company-social__networks">
+              <li class="company-networks__item">
+                <a href="#" class="company-networks__link">
+                  <svg class="company-networks__icon">
                     <use
                       href="./images/icons.svg#icon-instagram"
                       width="20px"
@@ -607,9 +611,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="networks__item">
-                <a href="#" class="networks__link">
-                  <svg class="networks__icon">
+              <li class="company-networks__item">
+                <a href="#" class="company-networks__link">
+                  <svg class="company-networks__icon">
                     <use
                       href="./images/icons.svg#icon-twitter"
                       width="20px"
@@ -618,9 +622,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="networks__item">
-                <a href="#" class="networks__link">
-                  <svg class="networks__icon">
+              <li class="company-networks__item">
+                <a href="#" class="company-networks__link">
+                  <svg class="company-networks__icon">
                     <use
                       href="./images/icons.svg#icon-facebook"
                       width="20px"
@@ -629,9 +633,9 @@
                   </svg>
                 </a>
               </li>
-              <li class="networks__item">
-                <a href="#" class="networks__link">
-                  <svg class="networks__icon">
+              <li class="company-networks__item">
+                <a href="#" class="company-networks__link">
+                  <svg class="company-networks__icon">
                     <use
                       href="./images/icons.svg#icon-linkedin"
                       width="20px"
@@ -654,9 +658,9 @@
                 placeholder="E-mail"
                 required
               />
-              <button class="button__form" type="button-sending">
+              <button class="button__subscription" type="button-sending">
                 Подписаться
-                <svg class="button__icon">
+                <svg class="button-subscription__icon">
                   <use
                     href="./images/icons.svg#icon-icon-send"
                     width="24px"
