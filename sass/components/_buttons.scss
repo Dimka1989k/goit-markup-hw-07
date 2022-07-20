@@ -1,4 +1,4 @@
-.button__open {
+.hero-button__open {
     font-family: 'Roboto', sans-serif;
     padding: 10px 32px;
     font-style: normal;
@@ -21,7 +21,7 @@
 
 
 
-.button__close {
+.modal-button__close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -43,7 +43,7 @@
 
 }
 
-.close__icon {
+.modal-close__icon {
     width: 18px;
     fill: currentColor;
 
@@ -53,8 +53,8 @@
 
 
 
-.button__close:hover,
-.button__close:hover {
+.modal-button__close:hover,
+.modal-modal-button__close:hover {
     box-shadow: none;
     color: #2196F3;
 

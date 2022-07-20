@@ -86,7 +86,7 @@ textarea {
   background-color: #FFFFFF;
 }
 
-.button__open {
+.hero-button__open {
   font-family: "Roboto", sans-serif;
   padding: 10px 32px;
   font-style: normal;
@@ -106,7 +106,7 @@ textarea {
   margin: 0 auto;
 }
 
-.button__close {
+.modal-button__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -123,13 +123,13 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close__icon {
+.modal-close__icon {
   width: 18px;
   fill: currentColor;
 }
 
-.button__close:hover,
-.button__close:hover {
+.modal-button__close:hover,
+.modal-modal-button__close:hover {
   box-shadow: none;
   color: #2196F3;
 }
@@ -235,7 +235,7 @@ textarea {
   fill: #FFFFFF;
 }
 
-.header-inner {
+.header-logo {
   display: inline-flex;
   height: 80px;
   align-items: center;
@@ -266,7 +266,7 @@ textarea {
   text-decoration: none;
 }
 
-.navigation .nav__link {
+.nav .nav__link {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

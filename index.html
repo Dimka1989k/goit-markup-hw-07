@@ -25,11 +25,11 @@
     <!--Header Site-->
     <header class="page-header">
       <div class="container">
-        <div class="header-inner">
+        <div class="header-logo">
           <a href="./index.html" class="logo">
             <span class="logo__lable">Web</span>Studio</a
           >
-          <nav class="navigation">
+          <nav class="nav">
             <ul class="nav list">
               <li class="nav__item">
                 <a class="nav__link link current" href="./index.html">Студия</a>
@@ -79,15 +79,19 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__text">Эффективные решения для вашего бизнеса</h1>
-          <button class="button__open" type="button" data-modal-open>
+          <button class="hero-button__open" type="button" data-modal-open>
             Заказать услугу
           </button>
           <!--Modal Window-->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="button__close" type="button" data-modal-close>
+              <button
+                class="modal-button__close"
+                type="button"
+                data-modal-close
+              >
                 <svg
-                  class="close__icon"
+                  class="modal-close__icon"
                   aria-label="link mail"
                   width="30"
                   height="30"
