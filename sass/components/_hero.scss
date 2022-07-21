@@ -12,6 +12,28 @@
 
 }
 
+
+.hero-section__button {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+
 .hero-section__text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
