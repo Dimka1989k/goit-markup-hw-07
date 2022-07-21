@@ -1,11 +1,11 @@
-.occupation {
+.work {
     padding-top: 0;
     padding-left: 15px;
     padding-right: 15px;
 
 }
 
-.occupation__content {
+.work__title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -19,7 +19,7 @@
 
 }
 
-.work {
+.work__list {
     display: flex;
     justify-content: space-between;
     padding-left: 0;

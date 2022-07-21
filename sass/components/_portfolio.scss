@@ -1,17 +1,3 @@
-.card__text {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
-    margin: 0;
-
-
-}
-
-
 
 .portfolio {
     display: flex;
@@ -25,20 +11,7 @@
 }
 
 
-.card__title {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
-    color: #757575;
-    margin: 0;
-
-
-}
-
-.portfolio__card {
+.portfolio-cards {
     width: 370px;
     height: 404px;
     left: 215px;
@@ -50,15 +23,28 @@
 }
 
 
+.portfolio-cards:hover .portfolio-cards__overlay  {
+    transform: translatey(-100%);
 
-.overlay {
+
+}
+
+
+.portfolio-cards:hover,
+.portfolio-cards:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+
+.portfolio-cards__content {
     position: relative;
     overflow: hidden;
 
 
 }
 
-.overlay__icon {
+.portfolio-cards__overlay {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -72,14 +58,8 @@
 
 }
 
-.portfolio__card:hover .overlay__icon {
-    transform: translatey(-100%);
 
-
-}
-
-
-.overlay__text {
+.portfolio-cards__overlay-text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -94,14 +74,52 @@
 }
 
 
-.portfolio__card:hover,
-.portfolio__card:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
-}
 
 
-.card__description {
+.portfolio-cards__description {
     padding: 20px 24px;
 
 }
+
+.portfolio-cards__description-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+    margin: 0;
+
+
+}
+
+
+.portfolio-cards__description-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,7 +6,7 @@
 
 }
 
-.footer-info {
+.footer-contacts {
     display: flex;
     justify-content: start;
 
@@ -36,7 +36,7 @@
 
 }
 
-.footer__contacts {
+.footer-contacts__list {
     padding-left: 0;
     margin-top: 20px;
     margin-bottom: 0%;
@@ -91,28 +91,28 @@
 
 }
 
-.footer-social__networks {
+.social-networks {
     margin-left: 70px;
 }
 
-.company-social__networks {
+.social-networks__list {
     display: flex;
     padding: 0;
 
 }
 
-.company-networks__item {
+.social-networks__item {
     display: block;
     margin-right: 10px;
 
 }
 
-.company-networks__item:last-child {
+.social-networks__item:last-child {
     margin-right: 0;
 }
 
 
-.company-networks__icon {
+.social-networks__icon {
     width: 20px;
     height: 20px;
 
@@ -125,7 +125,7 @@
 
 
 
-.company-networks__link {
+.social-networks__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,13 +141,13 @@
 
 
 
-.company-networks__link:hover,
-.company-networks__link:focus {
+.social-networks__link:hover,
+.social-networks__link:focus {
     background-color: #2196F3;
 }
 
 
-.social__description {
+.social-networks__title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -162,12 +162,12 @@
 }
 
 
-.footer-sending {
+.send {
     margin-left: auto;
 
 }
 
-.sending__text {
+.send-text {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -187,7 +187,7 @@
 
 
 
-.form__sending {
+.search-form__send {
     display: flex;
     align-items: center;
 
@@ -197,7 +197,7 @@
 }
 
 
-.input__mail {
+.search-form__send-input {
     display: flex;
     align-items: center;
     min-width: 358px;

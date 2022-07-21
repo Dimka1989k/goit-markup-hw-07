@@ -11,7 +11,7 @@
 
 
 
-.modal {
+.modal-button {
     display: flex;
     position: absolute;
     top: 10%;
@@ -32,7 +32,7 @@
 
 
 
-.form__modal {
+.search-form__modal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +45,7 @@
 
 }
 
-.form {
+.search-form__content {
     width: 100%;
     position: relative;
 
@@ -54,9 +54,9 @@
 }
 
 
-.form:focus-within>.modal__icon,
-.form:hover>.modal__icon,
-.form:focus>.modal__icon {
+.search-form__content:focus-within>.search-form__icon,
+.search-form__content:hover>.search-form__icon,
+.search-form__content:focus>.search-form__icon {
     fill: #2196F3;
 }
 
@@ -66,7 +66,7 @@
 
 
 
-.form__title {
+.search-form__title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -82,7 +82,7 @@
 
 
 
-.form__lable {
+.search-form__lable {
     display: block;
     width: 25px;
     height: 14px;
@@ -100,7 +100,7 @@
 
 
 
-.form__input {
+.search-form__input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -114,9 +114,9 @@
 
 }
 
-.form__input:focus-within,
-.form__input:hover,
-.form__input:focus {
+.search-form__input:focus-within,
+.search-form__input:hover,
+.search-form__input:focus {
     border: 1px solid #2196F3;
     color: #2196F3;
     fill: #2196F3;
@@ -126,7 +126,7 @@
 
 
 
-.modal__icon {
+.search-form__icon {
     position: absolute;
     top: 50%;
     left: 0;
@@ -141,7 +141,7 @@
 
 
 
-.form__textarea {
+.search-form__textarea {
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -153,8 +153,8 @@
 
 }
 
-.form__textarea:hover,
-.form__textarea:focus {
+.search-form__textarea:hover,
+.search-form__textarea:focus {
     border: 1px solid #2196F3;
 
 
@@ -162,7 +162,7 @@
 
 
 
-.form textarea::placeholder {
+.search-form__content textarea::placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -177,7 +177,7 @@
 
 
 
-.form__textarea::placeholder {
+.search-form__textarea::placeholder {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -189,7 +189,7 @@
 
 
 
-.label__checkbox {
+.search-checkbox__lable {
     position: relative;
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -208,7 +208,7 @@
 
 
 
-.icon__check {
+.search-checkbox__icon-check {
     position: absolute;
     left: 0;
     top: 50%;
@@ -222,13 +222,21 @@
 
 
 
-.checkbox:checked~.icon__check {
+.search-checkbox__input:checked~.search-checkbox__icon-check {
     opacity: 0;
 }
 
+.search-checkbox__input:checked~.search-checkbox__icon-active {
+    opacity: 1;
+}
 
 
-.icon__active {
+.search-checkbox__input:active {
+    background-color: #2196f3;
+}
+
+
+.search-checkbox__icon-active {
     position: absolute;
     left: 0;
     top: 50%;
@@ -241,13 +249,10 @@
 }
 
 
-.checkbox:checked~.icon__active {
-    opacity: 1;
-}
 
 
 
-.treaty {
+.search-checkbox__text {
     display: inline;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -259,9 +264,7 @@
     color: #2196F3;
 }
 
-.checkbox:active {
-    background-color: #2196f3;
-}
+
 
 
 .input__icon {

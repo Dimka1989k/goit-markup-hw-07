@@ -1,4 +1,4 @@
-.hero-button__open {
+.hero-section__button {
     font-family: 'Roboto', sans-serif;
     padding: 10px 32px;
     font-style: normal;
@@ -43,7 +43,7 @@
 
 }
 
-.modal-close__icon {
+.modal-button__icon {
     width: 18px;
     fill: currentColor;
 
@@ -54,7 +54,7 @@
 
 
 .modal-button__close:hover,
-.modal-modal-button__close:hover {
+.modal-button__close:focus {
     box-shadow: none;
     color: #2196F3;
 
@@ -102,7 +102,7 @@
 
 
 
-.portfolio-button__item {
+.portfolio-button__title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -121,8 +121,8 @@
 }
 
 
-.portfolio-button__item:hover,
-.portfolio-button__item:focus {
+.portfolio-button__title:hover,
+.portfolio-button__title:focus {
     color: #FFFFFF;
     background-color: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -130,7 +130,7 @@
 
 }
 
-.portfolio-button__menu {
+.portfolio-button__list {
     display: flex;
     justify-content: center;
     margin: 0%;
@@ -141,7 +141,7 @@
 }
 
 
-.button__subscription {
+.button-send {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,8 +167,8 @@
 
 
 
-.button__subscription:hover,
-.button__subscription:focus {
+.button-send:hover,
+.button-send:focus {
     background-color: #188ce8;
     cursor: pointer;
 
@@ -176,7 +176,7 @@
 }
 
 
-.button-subscription__icon {
+.button-send__image {
     display: inline-block;
     width: 24px;
     height: 24px;
