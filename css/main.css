@@ -241,7 +241,7 @@ textarea {
   align-items: center;
 }
 
-.page-header {
+.header {
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -631,7 +631,7 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.search-checkbox__lable {
+.search-checkbox {
   position: relative;
   align-items: center;
   font-family: "Roboto", sans-serif;
